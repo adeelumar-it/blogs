@@ -5,14 +5,14 @@ const User = require('../models/user'); // Corrected model name
 const BlogPost = require('../models/BlogPost');
 
 // Get all blog posts
-router.get('/', async (req, res) => {
-    try {
-        const data = await BlogPost.find();
-        res.json(data);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
-});
+//router.get('/', async (req, res) => {
+   // try {
+    //    const data = await BlogPost.find();
+    //    res.json(data);
+  //  } catch (err) {
+    //    res.status(500).json({ error: err.message });
+    //}
+//});
 
 // Create a new blog post
 router.post('/AddArticle', async (req, res) => {
